@@ -1,0 +1,51 @@
+$grey: #222;
+$green: rgb(144, 228, 105);
+$page-padding: 2.5em;
+
+
+body, html {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: $grey;
+    // font-family: 'Nanum Myeongjo', serif;
+}
+.container {
+    min-height: 100vh;
+}
+header {
+    background-color: $green;
+    padding: 1em $page-padding;
+    h1 { 
+        font-size: 6em;
+        a { text-decoration: none; 
+        color: $grey; }
+        color: $grey;
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+    }
+    border-bottom: solid 1px $grey;
+}
+
+main {
+    padding: 1.5em $page-padding;
+    min-height: 80vh;
+    display: flex;
+    .content {
+        width: 60%;
+        padding-right: 2em;
+    }
+    .secondary-content {
+        width: 40%;
+        border-left: solid 1px $grey;
+        padding-left: 2em;
+    }
+}
+
+footer {
+    padding: 1em $page-padding;
+}
